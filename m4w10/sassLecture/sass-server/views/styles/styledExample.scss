@@ -1,0 +1,25 @@
+@mixin border-styles($borderWidth, $borderColor){
+    border: $borderWidth, solid, $borderColor;
+    margin: 20px;
+}
+
+
+section {
+    // border: 5px solid seagreen;
+    // margin: 20px;
+    @include border-styles(5px, seagreen);
+    font-size: 20px;
+    width: 100%;
+}
+article {
+    // border: 2px solid black;
+    // margin: 20px;
+    @include border-styles(2px, blue);
+    padding: 10px;
+    /* 250px */
+    /* width: 50%; */
+    min-width: 50%;
+    /* max-width: 50%; */
+    /* 10px */
+    font-size: 5vw; /* This will be 40px */
+}

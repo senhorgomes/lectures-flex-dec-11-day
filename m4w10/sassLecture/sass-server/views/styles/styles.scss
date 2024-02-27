@@ -1,0 +1,87 @@
+@import '_variables';
+@mixin organized {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+* {
+    /* IF an element has border and padding, it will take that into account when we specify height and width */
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: flex;
+    background-color: $reallyCoolColor;
+    width: 100vw;
+}
+
+.sectionContainer {
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 300px;
+    
+    /* object-fit: contain; */
+}
+.groceryList {
+    background-color: #D4C1EC;
+    width: 100%;
+    li{
+        border: 2px solid black;
+        padding: 20px;
+        margin: 50px;
+        background-color: #F2DFD7;
+    }
+}
+// .groceryList > li{
+//     border: 2px solid black;
+//     padding: 20px;
+//     margin: 50px;
+//     background-color: #F2DFD7;
+// }
+
+/* Media query for mobile devices */
+
+@media only screen and (max-width: 500px) {
+    // .organized {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    .groceryList {
+        background-color: #581031;
+    }
+    .mainContainer {
+        flex-direction: column;
+    }
+    main h1 {
+        font-size: 10vw;
+    }
+    main h3 {
+        font-size: 5vw;
+    }
+    img {
+        width: 30vw;
+    }
+    .sectionContainer {
+        width: 90%;
+        @include organized;
+    }
+    .groceryList > li {
+        margin: 0px;
+        @include organized;
+    }
+}
+
+/* Media query for tablets devices */
+/* Specific range - 501px - 750px */
+@media only screen and (min-width:501px) and (max-width: 850px) {
+    img {
+        width: 20vw;
+    }
+}

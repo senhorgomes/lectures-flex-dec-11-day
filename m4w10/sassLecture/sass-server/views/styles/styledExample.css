@@ -1,0 +1,20 @@
+section {
+  border: 5px, solid, seagreen;
+  margin: 20px;
+  font-size: 20px;
+  width: 100%;
+}
+
+article {
+  border: 2px, solid, blue;
+  margin: 20px;
+  padding: 10px;
+  /* 250px */
+  /* width: 50%; */
+  min-width: 50%;
+  /* max-width: 50%; */
+  /* 10px */
+  font-size: 5vw; /* This will be 40px */
+}
+
+/*# sourceMappingURL=styledExample.css.map */
