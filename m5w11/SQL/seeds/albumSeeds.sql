@@ -1,0 +1,66 @@
+INSERT INTO albums (album_name, artist_name, release_date) VALUES ('Renaissance', 'Beyonce', '7/29/2022');
+INSERT INTO albums (album_name, artist_name, release_date) VALUES ('Honestly, Nevermind','Drake', '6/17/2022');
+INSERT INTO albums (album_name, artist_name, release_date) VALUES ('Harrys House','Harry Styles', '5/20/2022');
+INSERT INTO albums (album_name, artist_name, release_date) VALUES ('Shrek: Music from the Original Motion Picture','Various Artists', '5/15/2001');
+INSERT INTO albums (album_name, artist_name, release_date) VALUES ('Nonesense','Various Artists', '5/3/2024');
+
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '1', 'Im That Girl', 5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '2', 'Cozy', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '3', 'Alien Superstar', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '4', 'Cuff It', 2.5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '5', 'Energy', 4.2);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '6', 'Break My Soul', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '7', 'Church Girl', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '8', 'Plastic Off the Sofa',3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '9', 'Virgos Groove',2);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '10', 'Move',5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '11', 'Heated',4.1);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '12', 'Thique',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '13', 'All Up in Your Mind',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '14', 'America Has a Problem',2.2);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '15', 'Pure/Honey',3.3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('1', '16', 'Summer Renaissance',2);
+-- Album 2
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '1', 'Intro', 3.5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '2', 'Falling Back', 5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '3', 'Texts Go Green', 1.5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '4', 'Currents', 2.23);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '5', 'A Keeper', 3.6);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '6', 'Calling My Name', 3.45);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '7', 'Sticky', 3.7);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '8', 'Massive', 3.8);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '9', 'Flights Booked', 4.1);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '10', 'Overdrive', 3.4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '11', 'Down Hill', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '12', 'Tie That Binds', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '13', 'Liability', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('2', '14', 'Jimmy Cooks', 3);
+-- Album 3
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '1', 'Music for a Sushi Restaurant', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '2', 'Late Night Talking', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '3', 'Grapejuice', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '4', 'As It Was', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '5', 'Daylight', 1);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '6', 'Little Freak', 5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '7', 'Matilda', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '8', 'Cinema', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '9', 'Daydreaming', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '10', 'Keep Driving', 2);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '11', 'Satellite', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '12', 'Boyfriends', 3);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('3', '13', 'Love of My Life', 3);
+-- Album 4
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '1', 'Stay Home', 4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '2', 'Im a Believer',5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '3', 'Like Wow!',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '4', 'It Is You (I Have Loved)',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '5', 'Best Years of Our Lives',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '6', 'Bad Reputation',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '7', 'My Beloved Monster',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '8', 'You Belong to Me',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '9', 'All Star',5);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '10', 'Hallelujah',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '11', 'Im on My Way',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '12', 'Im a Believer (Reprise)',4);
+INSERT INTO songs (album_id, track_number, song_name, rating) VALUES ('4', '13', 'True Loves First Kiss',4);
+

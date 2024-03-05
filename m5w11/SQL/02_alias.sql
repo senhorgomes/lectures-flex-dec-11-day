@@ -1,0 +1,2 @@
+-- Alias
+--  We can rename the column of the data returned to us to make it more understandable
