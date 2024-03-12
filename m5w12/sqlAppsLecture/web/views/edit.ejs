@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+
+<body>
+    <div>
+        <div ></div>
+        <div >
+            <h5>Edit for: <%= villain.name %></h5>
+        </div>
+        <div>
+            <form action="/edit/<%= villain.id %>" method="POST">
+                <div>
+                    <h5>Edit the existing Object</h5>
+                    <label for="name">New Name:</label>
+                    <input class="form-control" type="text" name="villainName" value="<%= villain.name%>"><br/>
+                    <label for="type">New Type:</label>
+                    <input class="form-control" type="text" name="villainType" value="<%= villain.type%>"><br/>
+                    <button type="submit" class="btn btn-primary" style="margin: 1em">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

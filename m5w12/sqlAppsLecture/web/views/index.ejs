@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page for Villains</title>
+</head>
+
+<body>
+    <h1>Index page for Villains</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Villain name</th>
+                <th scope="col">Villain movie</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let villain of villains) { %>
+                <tr>
+                    <td>
+                        <%= villain.villain %>
+                    </td>
+                    <td>
+                        <%= villain.movie %>
+                    </td>
+                    <td>
+                        <form method="GET" action="/villain/edit/<%= villain.id %>">
+                            <button type='submit' class='btn btn-primary'>Edit</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="POST" action="/delete/<%= villain.id %>">
+                            <button type='submit' class='btn btn-danger'>Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
