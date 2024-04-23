@@ -10,7 +10,7 @@ function App() {
   // const [selectedCityEmoji, setSelectedEmoji] = useState("☀️");
 
   // const fetchWeather = () => {
-  //   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=16354d8b7551f37dde75ee0b8b506c68&units=metric`)
+    // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=INSERT_KEY&units=metric`)
   //     // Every response will be json
   //     .then((response) => response.json())
   //     // Depending on the response of the weather, we need to modify which emoji will be displayed and weather
