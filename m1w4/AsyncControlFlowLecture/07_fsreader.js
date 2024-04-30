@@ -1,57 +1,31 @@
 //fs? Filesystem?
 //A node module that allows us to interact with the file system
-const fs = require("fs")
-//Read all three text files, and add them up
+const fs = require("fs").promises; // Use fs.promises for Promise-based methods
 
-let totalSum = 0;
 
-// fs.readFile('./data1.txt', 'utf-8',(err, data) => {
-//     if (err) {
-//         throw err
-//     };
-//     // The data that is being retrieved will always be a string
-//     totalSum += Number(data);
-//     // console.log(totalSum);
-//     // We dont know how long these files will take to read
-//     fs.readFile('./data2.txt', 'utf-8',(err, data) => {
-//         if (err) {
-//             throw err
-//         };
-
-//         totalSum += Number(data);
-
-//         fs.readFile('./data3.txt', 'utf-8',(err, data) => {
-//             if (err) {
-//                 throw err
-//             };
-
-//             totalSum += Number(data);
-//             console.log("Final total is:", totalSum);
-//           });
-//       });
-//   });
-  fs.readFile('./data1.txt', 'utf-8',(err, data) => {
-    if (err) {
-        throw err
-    };
-    // The data that is being retrieved will always be a string
-    totalSum += Number(data);
-    // console.log(totalSum);
-    // We dont know how long these files will take to read
-});
-fs.readFile('./data2.txt', 'utf-8',(err, data) => {
-    if (err) {
-        throw err
-    };
-
-    totalSum += Number(data);
-
-});
-fs.readFile('./data3.txt', 'utf-8',(err, data) => {
-    if (err) {
-        throw err
-    };
-
-    totalSum += Number(data);
-    console.log("Final total is:", totalSum);
+function readFilePromise(filePath) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filePath, 'utf-8', (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    });
   });
+}
+
+async function calculateSum() {
+    try {
+      const data1 = await readFilePromise('./data1.txt');
+      const data2 = await readFilePromise('./data2.txt');
+      const data3 = await readFilePromise('./data3.txt');
+  
+      const totalSum = Number(data1) + Number(data2) + Number(data3);
+      console.log("Final total is:", totalSum);
+    } catch (err) {
+      console.error("Error reading files:", err);
+    }
+  }
+  
+  calculateSum();
